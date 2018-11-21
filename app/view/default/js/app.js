@@ -244,9 +244,11 @@ function loadPage($url,$pushstate = true){
 
 $(document).ready(function(){
 	$('#main').on('click mousedown','a.ajax[href], ol.breadcrumb a',function(e){
-		e.preventDefault ? e.preventDefault() : e.returnValue = false;
-		loadPage($(this).attr('href'));
-		return false;
+		if (e.which==1){
+			e.preventDefault ? e.preventDefault() : e.returnValue = false;
+			loadPage($(this).attr('href'));
+			return false;
+		}
 	})
 });
 

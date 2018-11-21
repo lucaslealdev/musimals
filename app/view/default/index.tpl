@@ -18,7 +18,7 @@ include('includes/menu.tpl');
 	<?php foreach($artistas as $art){extract($art);?>
 		<a class="ajax" href="<?= RAIZ?>/artistas/<?= $id?>/<?= urlencode($nome)?>">
 			<div class="grd artista">
-				<img src="<?= $caminho?>/artista.png">
+				<div class="img" style="background-image:url('<?= $caminho?>/artista.png');"></div>
 				<p><span><?= $nome?></span> (<?= $musicas?>)</p>
 			</div>
 		</a>
@@ -32,7 +32,7 @@ include('includes/menu.tpl');
 	<?php foreach($discos as $disco){extract($disco);?>
 		<a class="ajax" href="<?= RAIZ?>/discos/<?= $id?>/<?= urlencode($nomeartista.' '.$nome)?>">
 			<div class="grd disco">
-				<img src="<?= $caminho?>/disco.png">
+				<div class="img" style="background-image:url('<?= $caminho?>/disco.png');"></div>
 				<p><span><?= $nome?></span> (<?= $musicas?>)</p>
 			</div>
 		</a>

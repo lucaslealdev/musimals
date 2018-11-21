@@ -1,35 +1,35 @@
 /* BLESS WINDOWS
 
-.,,uod8B8bou,,.
-..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
-,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
-!...:!TVBBBRPFT||||||||||!!^^""'   ||||
-!.......:!?|||||!!^^""'            ||||
-!.........||||                     ||||
-!.........||||  C:\                ||||
-!.........||||                     ||||
-!.........||||                     ||||
-!.........||||                     ||||
-!.........||||                     ||||
-`.........||||                    ,||||
-.;.......||||               _.-!!|||||
-..,uodWBBBBb.....||||       _.-!!|||||||||!:'
-!.*BBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
-!...YBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
-!.....YBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.
-!.......YBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.
-!.........YBBBBBBBBBRPFT?!::::::::::^''...::::::;         iBBbo.
-`...........YRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
-`..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
-`........::::::::::::::::;iof688888888888888888888b.     `
-`......:::::::::;iof688888888888888888888888888888b.
-`....:::;iof688888888888888888888888888888888899fT!
-`..::!8888888888888888888888888888888899fT|!^"'
-`' !!988888888888888888888888899fT|!^"'
-`!!8888888888888888899fT|!^"'
-`!988888888899fT|!^"'
-`!9899fT|!^"'
-`!^"'
+                       .,,uod8B8bou,,.
+              ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
+         ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
+         !...:!TVBBBRPFT||||||||||!!^^""'   ||||
+         !.......:!?|||||!!^^""'            ||||
+         !.........||||                     ||||
+         !.........||||  C:\                ||||
+         !.........||||                     ||||
+         !.........||||                     ||||
+         !.........||||                     ||||
+         !.........||||                     ||||
+         `.........||||                    ,||||
+          .;.......||||               _.-!!|||||
+   .,uodWBBBBb.....||||       _.-!!|||||||||!:'
+!YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
+!..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
+!....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.
+!......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.
+!........YBBBBBBBBBBRPFT?!::::::::::^''...::::::;         iBBbo.
+`..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
+  `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
+    `........::::::::::::::::;iof688888888888888888888b.     `
+      `......:::::::::;iof688888888888888888888888888888b.
+        `....:::;iof688888888888888888888888888888888899fT!
+          `..::!8888888888888888888888888888888899fT|!^"'
+            `' !!988888888888888888888888899fT|!^"'
+                `!!8888888888888888899fT|!^"'
+                  `!988888888899fT|!^"'
+                    `!9899fT|!^"'
+                      `!^"'
 */
 
 /**********************************************************************************/
@@ -465,13 +465,20 @@ html body{
     width: 100%;
 }
 
-.grd.artista img{
+.grd.artista img,.grd.artista div.img{
     width: 100%;
     border-radius: 50%;
     display: block;
     -webkit-box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
     box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
     border: 3px solid white;
+}
+.grd.artista div.img{
+    background-size: cover;
+    height: 0px;
+    padding-bottom: calc(100% - 6px);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .grd p{
     text-align: center;
@@ -492,6 +499,15 @@ html body{
 .grd.disco img{
     width: 100%;
     display: block;
+}
+.grd.disco div.img{
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 0px;
+    padding-bottom: calc(100% - 6px);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .extra-wrapper > :not(.hscroll).right,
