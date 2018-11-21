@@ -1,4 +1,5 @@
 <div id="playlist">
+	<div class="closer" style="padding-top:10px;padding-bottom:10px;text-align: center;background-color: black;color:white;" onclick="toggleHash('#playlist');$('body').toggleClass('noscroll');"><i class="fa fa-2x fa-fw fa-chevron-down"></i></div>
 	<div class="table-wrapper"><table class="tabela" id="pl"><tbody></tbody></table></div>
 	<table style="display: none;" id="plsauce">
 		<tbody>
@@ -24,7 +25,7 @@
 	</table>
 </div>
 <div id="player-wrapper">
-	<div class="capinha" onclick="if (window.fila.length>0){toggleHash('#playlist');}"><canvas id="analyser_render"></canvas></div>
+	<div class="capinha" onclick="if (window.fila.length>0){toggleHash('#playlist');$('body').toggleClass('noscroll');}"><canvas id="analyser_render"></canvas></div>
 	<audio id="player" src="" type="audio/mpeg" volume="1.0"></audio>
 	<input type="range" class="ranger" tabstop="100" id="progresso" min="0" step="0.00001" value="0" disabled/>
 	<div class="duracao"><span class="atual">00:00</span><span class="separador"> / </span><span class="total">00:00</span></div>

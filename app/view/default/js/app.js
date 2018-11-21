@@ -7,6 +7,10 @@ function loading(){
 	$('#loading').remove();
 }
 
+if(window.location.hash!==""){ /*remove hash inicial*/
+	location.href=location.pathname;
+}
+
 function toggleHash($hash){
 	if (window.location.hash!==$hash){
 		window.location.hash=$hash;

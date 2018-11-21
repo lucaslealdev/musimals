@@ -76,6 +76,9 @@ html body{
     padding-left: 40px;
     padding-bottom: 130px;
 }
+body.noscroll{
+    overflow: hidden;
+}
 /* xs */
 @media (max-width: 767px) {
     html body{
@@ -90,13 +93,14 @@ a{
 }
 #main{
     padding-top:9px;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-user-select: none; /* Non-prefixed version, currently
-supported by Chrome and Opera */
+}
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 #main > *{
     transition: 300ms all ease;
@@ -1146,14 +1150,14 @@ ul.dropdown-menu li:hover{
 
 .table-wrapper{
     display:block;
-    height: calc(100% - 75px);
+    height: calc(100% - 128px);
     overflow-y:auto;
     overscroll-behavior: contain;
 }
 @media (min-width: 768px){
    .table-wrapper{
         display:block;
-        height: calc(100% - 102px);
+        height: calc(100% - 155px);
     }
 }
 
