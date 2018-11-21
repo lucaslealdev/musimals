@@ -14,6 +14,6 @@ include('includes/menu.tpl');
 </nav>
 <?php if(!empty($discos)){?>
 <h4>Discos</h4>
-	<?php foreach($discos as $disco){extract($disco);?><a class="ajax" href="<?= RAIZ?>/discos/<?= $id?>/<?= urlencode($nomeartista.' '.$nome)?>"><div class="img capinhaWall" style="background-image:url('<?= $caminho?>/disco.png');"></div></a><?php }?>
+	<?php foreach($discos as $disco){extract($disco);?><a class="ajax awall" href="<?= RAIZ?>/discos/<?= $id?>/<?= urlencode($nomeartista.' '.$nome)?>"><div class="img capinhaWall" style="background-image:url('<?= $caminho?>/disco.png');"></div></a><?php }?>
 <?php }?>
 <?php include('includes/footer.tpl');

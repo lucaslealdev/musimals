@@ -19,7 +19,7 @@ include('includes/menu.tpl');
 	<?php foreach($discos as $disco){extract($disco);?>
 		<a class="ajax" href="<?= RAIZ?>/discos/<?= $id?>/<?= urlencode($nomeartista.' - '.$nome)?>">
 			<div class="grd disco">
-				<img src="<?= $caminho?>/disco.png">
+				<div class="img" style="background-image:url('<?= $caminho?>/disco.png');"></div>
 				<p><span><?= $nome?></span> (<?= $musicas?>)</p>
 			</div>
 		</a>

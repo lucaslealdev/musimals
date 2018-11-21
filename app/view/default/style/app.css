@@ -533,6 +533,20 @@ html body{
     background-repeat: no-repeat;
     background-position: center;
 }
+.capinhaWall{
+    width: 120px;
+    height: 120px;
+    padding-bottom: 0px;
+    display: inline-block;
+}
+.awall{
+    display: inline-block;
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    margin-top: -5px;
+}
 
 .extra-wrapper > :not(.hscroll).right,
 .extra-wrapper > :not(.hscroll).left{
