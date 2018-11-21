@@ -32,6 +32,26 @@
                       `!^"'
 */
 
+/*scroll*/
+
+
+*::-webkit-scrollbar-track
+{
+    background-color: black;
+}
+
+*::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #000000;
+}
+
+*::-webkit-scrollbar-thumb
+{
+    background-color: #00EEE0;
+}
+
+
 /**********************************************************************************/
 /******************* GRID XL ******************************************************/
 /**********************************************************************************/
@@ -52,7 +72,7 @@
 /******************* BASE *********************************************************/
 /**********************************************************************************/
 html body{
-    overscroll-behavior-y: contain;
+    overscroll-behavior-y: none;
     padding-left: 40px;
     padding-bottom: 130px;
 }
@@ -500,12 +520,12 @@ html body{
     width: 100%;
     display: block;
 }
-.grd.disco div.img{
+.grd.disco div.img, .capinhaWall{
     background-size: cover;
     width: 100%;
     display: block;
     height: 0px;
-    padding-bottom: calc(100% - 6px);
+    padding-bottom: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
