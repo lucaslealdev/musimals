@@ -244,6 +244,13 @@ label#menucontrol:focus::after{
     transition: all 300ms;
 }
 
+/* md */
+@media (min-width: 992px){
+    #shadow{
+        display: none;
+    }
+}
+
 label#menucontrol:focus #shadow{
     opacity: 0.6;
     pointer-events: all;
