@@ -95,6 +95,26 @@ function toast($msg){
     });
 }
 
+function gotoDisco($indice){
+	setTimeout(function(){
+		loadPage(window.raiz+"/discos/"+fila[$indice].disco+'/'+encodeURI(fila[$indice].nomeartista+' - '+fila[$indice].nomedisco));
+	},150);
+}
+
+function gotoArtista($indice){
+	setTimeout(function(){
+		loadPage(window.raiz+"/artistas/"+fila[$indice].artista+'/'+encodeURI(fila[$indice].nomeartista));
+	},150);
+}
+
+function remFila($indice){
+	window.fila.splice($indice,1);
+	atualizaFila();
+	if (window.indice==$indice){
+		playMusica($indice);
+	}
+}
+
 function addFila($obj){
 	var isArray = Array.isArray($obj);
 	var plural = '';

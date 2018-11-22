@@ -13,10 +13,10 @@
 						<i class="fa fa-2x fa-ellipsis-v"></i>
 					</button>
 					<ul class="dropdown-menu pull-right">
-						<li>Reproduzir agora</li>
-						<li>Ir para o álbum</li>
-						<li>Ir para o artista</li>
-						<li>Remover da fila</li>
+						<li onclick="playMusica($(this).closest('tr').data('indice'));">Reproduzir agora</li>
+						<li onclick="toggleHash('#playlist');$('body').toggleClass('noscroll');gotoDisco($(this).closest('tr').data('indice'));">Ir para o álbum</li>
+						<li onclick="toggleHash('#playlist');$('body').toggleClass('noscroll');gotoArtista($(this).closest('tr').data('indice'));">Ir para o artista</li>
+						<li onclick="remFila($(this).closest('tr').data('indice'));">Remover da fila</li>
 					</ul>
 				</div>
 			</td>
