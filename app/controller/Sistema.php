@@ -86,7 +86,10 @@ class Sistema{
 						    if (strpos($array_imghtml_2[0], "instagram")===false) $array_imgurl[] = $array_imghtml_2[0];
 						  }
 						}
-						file_put_contents($targetDisco, fopen($array_imgurl[0], 'r'));
+						$chave = -1;
+						while (isset($array_imgurl[$chave+1]) && !file_put_contents($targetDisco, fopen($array_imgurl[$chave+1], 'r'))){
+							$chave++;
+						}
 					}
 					$disco_id = $app->database->query(
 						"SELECT id FROM disco WHERE nome = :disco and artista= :artista_id;",
