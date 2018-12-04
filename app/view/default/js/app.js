@@ -169,7 +169,7 @@ function setFila($filastr){
 	if (typeof $filastr=='string'){
 		$filastr = JSON.parse($filastr);
 	}
-	fila = $filastr;
+	fila = JSON.parse(JSON.stringify($filastr));
 	atualizaFila();
 	playMusica(0);
 }
