@@ -152,6 +152,9 @@
 			frameLooper();
 		}
 		initMp3Player();
+		$('body').one('click', function() {
+		  context.resume();
+		});
 		// frameLooper() animates any style of graphics you wish to the audio frequency
 		// Looping at the default frame rate that the browser provides(approx. 60 FPS)
 		function frameLooper(){
