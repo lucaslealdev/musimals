@@ -1,6 +1,6 @@
 <?php
 define('TIMEZONE','America/Sao_Paulo');
-define('TEMA','default');
+define('TEMA','disco');
 
 /* BLESS THE ELEPHANT
                           _

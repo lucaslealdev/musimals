@@ -1,0 +1,44 @@
+{
+  "name": "Musimals",
+  "icons": [
+    {
+      "src": "img/smallicon.png",
+      "sizes": "250x250",
+      "type": "image/png",
+      "density": 0.75
+    },
+    {
+      "src": "img/smallicon.png",
+      "sizes": "250x250",
+      "type": "image/png",
+      "density": 1.0
+    },
+    {
+      "src": "img/smallicon.png",
+      "sizes": "250x250",
+      "type": "image/png",
+      "density": 1.5
+    },
+    {
+      "src": "img/smallicon.png",
+      "sizes": "250x250",
+      "type": "image/png",
+      "density": 2.0
+    },
+    {
+      "src": "img/smallicon.png",
+      "sizes": "250x250",
+      "type": "image/png",
+      "density": 3.0
+    },
+    {
+      "src": "img/smallicon.png",
+      "sizes": "250x250",
+      "type": "image/png",
+      "density": 4.0
+    }
+  ],
+  "start_url": "/musimals/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
