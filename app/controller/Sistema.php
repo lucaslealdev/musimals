@@ -39,7 +39,7 @@ class Sistema{
 				if (!file_exists($targetArtista)){
 					$dom->loadFromUrl('http://www.google.com.br/search?as_st=y&tbm=isch&as_q=&as_epq='.urlencode(windows_utf8_encode($artista)).'&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=isz:m,iar:s');
 					$image_container = $dom->find('table a > img', 0);
-					file_put_contents($targetArtista, fopen($image_container->getAttribute('src'), 'r'));
+					if ($image_container) file_put_contents($targetArtista, fopen($image_container->getAttribute('src'), 'r'));
 				}
 				$artista_id = $app->database->query(
 					"SELECT id FROM artista WHERE nome = :nome;",

@@ -4,7 +4,7 @@
         "components/jquery": "^3.3",
         "fortawesome/font-awesome": "^4.7",
         "catfan/medoo": "^1.6",
-        "thesoftwarefanatics/php-html-parser": "^1.7",
+        "thesoftwarefanatics/php-html-parser": "^1.8.1",
         "twitter/bootstrap": "3.3.7",
         "wapmorgan/mp3info": "^0.0.3"
     },
